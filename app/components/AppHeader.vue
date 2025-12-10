@@ -22,9 +22,9 @@ const closeMenu = () => {
 <template>
   <header class="w-full shadow-lg bg-white z-40">
     <!-- Top Bar -->
-    <div class="bg-[#019192] text-white text-[17px]">
+    <div class="bg-[#019192] text-white text-[14px] lg:text-[18px]">
       <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col sm:flex-row justify-end items-end space-y-2 sm:space-y-0 sm:space-x-6"
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 lg:py-3.5 flex flex-col sm:flex-row justify-end items-end space-y-2 sm:space-y-0 sm:space-x-6"
       >
         <p class="font-medium">
           24/7 Emergency Services
@@ -37,10 +37,10 @@ const closeMenu = () => {
     <!-- Navbar -->
     <nav class="border-b border-gray-100 sticky top-0 z-50 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div class="flex justify-between items-center h-20">
+        <div class="flex justify-between items-center h-12 lg:h-20">
           <!-- Logo -->
           <NuxtLink to="/" class="flex items-center">
-            <NuxtImg src="/images/logo.jpg" alt="Logo" width="200" />
+            <NuxtImg src="/images/logo.jpg" alt="Logo" class="w-[140px] lg:w-[200px]" />
           </NuxtLink>
 
           <!-- Desktop Menu -->
