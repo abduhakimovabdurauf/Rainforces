@@ -129,6 +129,72 @@ const features = [
     </div>
   </section>
 
+  <!-- DEVELOPMENT & DESIGN SECTION -->
+  <section class="py-20 bg-white">
+    <div
+      class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-start gap-12"
+    >
+      <!-- TEXT LEFT -->
+      <div class="lg:w-1/2 space-y-6">
+        <h2 class="text-3xl font-bold text-gray-900">
+          Development & Design of Buildings
+        </h2>
+
+        <p class="text-gray-700 leading-relaxed">
+          We deliver complete building development and design services carefully
+          tailored to match the specific requirements of every client. Our
+          methods combine innovative ideas, precise engineering, and
+          industry-standard practices to produce buildings that are practical,
+          sustainable, and aesthetically impressive.
+        </p>
+
+        <p class="text-gray-700 leading-relaxed">
+          From the earliest concept to the final approval stage, we oversee each
+          step with professionalism and meticulous attention to detail. This
+          ensures smooth project execution and outstanding results for both
+          residential and commercial developments.
+        </p>
+
+        <p class="text-gray-700 leading-relaxed">
+          In addition, we prioritize collaboration and transparent communication
+          throughout every project. By working closely with clients, architects,
+          and industry partners, we ensure that each design choice aligns with
+          long-term goals, budget expectations, and modern construction
+          standards. This collaborative approach allows us to deliver buildings
+          that not only meet structural requirements but also enhance comfort,
+          efficiency, and overall value.
+        </p>
+      </div>
+
+      <!-- IMAGE RIGHT (2-column layout) -->
+      <div class="lg:w-1/2 grid grid-cols-2 gap-1">
+        <!-- 1st column: 2 images stacked -->
+        <div class="flex flex-col gap-1">
+          <NuxtImg
+            src="/images/development-design-3.jpg"
+            alt="Development and Design of Buildings"
+            class="w-full h-50 object-cover"
+            loading="lazy"
+          />
+          <NuxtImg
+            src="/images/development-design-2.jpg"
+            alt="Development and Design of Buildings"
+            class="w-full h-48 object-cover"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- 2nd column: single full-height image -->
+        <NuxtImg
+          src="/images/development-design.jpg"
+          alt="Development and Design of Buildings"
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </section>
+
   <!-- FEATURES HIGHLIGHT SECTION -->
   <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-6 text-center">

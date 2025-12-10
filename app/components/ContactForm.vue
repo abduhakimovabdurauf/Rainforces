@@ -1,45 +1,20 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { useContactForm } from '@/composables/useContactForm'
 
-const name = ref('')
-const email = ref('')
-const phone = ref('')
-const message = ref('')
-const submitting = ref(false)
-const success = ref(false)
-const error = ref('')
-
-// Simple form submit (backend endpoint kerak)
-const handleSubmit = async () => {
-  submitting.value = true
-  error.value = ''
-  success.value = false
-
-  try {
-    // Misol uchun, /api/contact endpoint
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name: name.value, email: email.value, phone: phone.value, message: message.value })
-    })
-
-    if (!res.ok) throw new Error('Failed to send message')
-
-    success.value = true
-    name.value = ''
-    email.value = ''
-    phone.value = ''
-    message.value = ''
-  } catch (e: any) {
-    error.value = e.message
-  } finally {
-    submitting.value = false
-  }
-}
+const {
+  name,
+  email,
+  phone,
+  message,
+  submitting,
+  success,
+  error,
+  handleSubmit
+} = useContactForm()
 </script>
 
 <template>
-  <form @submit.prevent="handleSubmit" class="bg-white p-8 rounded-3xl shadow-md w-full max-w-lg">
+  <form @submit.prevent="handleSubmit" class="bg-white p-8 rounded-3xl shadow-md w-full">
     <h3 class="text-2xl font-bold mb-6">Contact Us</h3>
 
     <div class="mb-4">

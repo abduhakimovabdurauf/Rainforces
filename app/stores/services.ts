@@ -66,6 +66,20 @@ export const useServicesStore = defineStore("services", {
           "We offer safe and efficient demolition and excavation services for residential, commercial, and industrial projects. Our team handles everything from small interior removals and partial demolitions to complete building tear-downs. Safety is our top priority—we follow strict procedures, use professional equipment, and manage debris disposal in an eco-friendly manner. Our excavation services include site clearing, land leveling, trench digging, foundation preparation, and grading. We work with general contractors, builders, and property owners to prepare construction sites for new development. Whether you are planning renovations, expansions, or new construction, we ensure precise measurements, proper depth control, and stable ground preparation. Our operations are fast, reliable, and compliant with all safety regulations.",
         image: "/images/services/demolition.jpg",
       },
+      {
+        id: 9,
+        name: "Development & Design of Buildings",
+        description:
+          "We deliver complete building development and design services carefully tailored to match the specific requirements of every client. Our methods combine innovative ideas, precise engineering, and industry-standard practices to produce buildings that are practical, sustainable, and aesthetically impressive. From the earliest concept to the final approval stage, we oversee each step with professionalism and meticulous attention to detail. This ensures smooth project execution and outstanding results for both          residential and commercial developments. In addition, we prioritize collaboration and transparent communication throughout every project. y working closely with clients, architects, and industry partners, we ensure that each design choice aligns with long-term goals, budget expectations, and modern construction standards.",
+        image: "/images/development-design.jpg",
+      },
+      {
+        id: 10,
+        name: "Infrastructure & Facility Management",
+        description:
+          "Our Infrastructure & Facility Management services are designed to ensure buildings operate efficiently, safely, and sustainably. We provide continuous monitoring, preventive maintenance, and advanced management solutions to maintain the long-term performance of all infrastructure systems. From electrical and mechanical systems to safety compliance and daily operational support, our team delivers complete facility management solutions that reduce costs, improve reliability, and enhance overall building performance. By working closely with clients, architects, and industry professionals, we develop tailored management strategies that align with operational needs, budget expectations, and long-term goals, ensuring that every facility remains secure, functional, and consistently well-maintained.",
+        image: "/images/services/infrasturkture.jpg",
+      },
     ],
   }),
   getters: {

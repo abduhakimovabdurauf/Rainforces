@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AppHeader />
+    <AppHeader  data-aos="fade-down"/>
     <slot />
     <AppContact />
     <AppFooter />

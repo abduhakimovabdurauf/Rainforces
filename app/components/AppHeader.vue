@@ -14,7 +14,7 @@ const isOpen = ref(false);
 const isDropdownOpen = ref(false);
 
 const closeMenu = () => {
-  isOpen.value = false;
+  isOpen.value = false; 
   isDropdownOpen.value = false;
 };
 </script>
@@ -22,18 +22,15 @@ const closeMenu = () => {
 <template>
   <header class="w-full shadow-lg bg-white z-40">
     <!-- Top Bar -->
-    <div class="bg-[#019192] text-white text-sm">
+    <div class="bg-[#019192] text-white text-[17px]">
       <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col sm:flex-row justify-end items-center space-y-2 sm:space-y-0 sm:space-x-6 text-center"
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col sm:flex-row justify-end items-end space-y-2 sm:space-y-0 sm:space-x-6"
       >
-        <a href="#contact" class="hover:text-[#f77c14] font-bold transition">
-          Contact
-        </a>
-        <span class="hidden sm:inline">|</span>
-        <span class="font-medium">
-          Mon - Fri: 8:00 AM - 6:00 PM |
+        <p class="font-medium">
+          24/7 Emergency Services
+          <span class="">| </span>
           <a href="tel:6473428600" class="hover:underline">(647) 342-8600</a>
-        </span>
+        </p>
       </div>
     </div>
 
