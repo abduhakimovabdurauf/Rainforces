@@ -137,7 +137,7 @@ const features = [
       <!-- TEXT LEFT -->
       <div class="lg:w-1/2 space-y-6">
         <h2 class="text-3xl font-bold text-gray-900">
-          Development & Design of Buildings
+          Development & Design
         </h2>
 
         <p class="text-gray-700 leading-relaxed">

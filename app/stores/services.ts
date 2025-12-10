@@ -68,7 +68,7 @@ export const useServicesStore = defineStore("services", {
       },
       {
         id: 9,
-        name: "Development & Design",
+        name: "Development & Design of Buildings",
         description:
           "We deliver complete building development and design services carefully tailored to match the specific requirements of every client. Our methods combine innovative ideas, precise engineering, and industry-standard practices to produce buildings that are practical, sustainable, and aesthetically impressive. From the earliest concept to the final approval stage, we oversee each step with professionalism and meticulous attention to detail. This ensures smooth project execution and outstanding results for both          residential and commercial developments. In addition, we prioritize collaboration and transparent communication throughout every project. y working closely with clients, architects, and industry partners, we ensure that each design choice aligns with long-term goals, budget expectations, and modern construction standards.",
         image: "/images/development-design.jpg",
