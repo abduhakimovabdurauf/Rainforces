@@ -63,8 +63,8 @@ const closeLightbox = () => {
     <div v-if="projects.length" class="mt-20 w-full">
       <h2 class="text-3xl font-bold text-gray-800 mb-8">Project Portfolio</h2>
       <!-- Each project's images -->
-      <div v-for="project in projects" :key="project.id" class="space-y-3">
-        <p class="font-semibold text-gray-700">{{ project.title }}</p>
+      <div v-for="project in projects" :key="project.id" class="space-y-3 mb-14">
+        <p class="font-semibold text-gray-700">{{ project.address ? project.address : project.title }}</p>
 
         <div class="flex flex-wrap gap-1">
           <NuxtImg

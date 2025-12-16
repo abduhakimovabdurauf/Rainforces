@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { useServicesStore } from "~/stores/services";
+import { useServiceCategoryStore } from "@/stores/serviceCategory";
 
-const servicesStore = useServicesStore();
-const services = servicesStore.get;
+const { categories } = useServiceCategoryStore();
 
 const navItems = [
   { name: "Home", link: "/" },
@@ -14,7 +13,7 @@ const isOpen = ref(false);
 const isDropdownOpen = ref(false);
 
 const closeMenu = () => {
-  isOpen.value = false; 
+  isOpen.value = false;
   isDropdownOpen.value = false;
 };
 </script>
@@ -40,7 +39,11 @@ const closeMenu = () => {
         <div class="flex justify-between items-center h-12 lg:h-20">
           <!-- Logo -->
           <NuxtLink to="/" class="flex items-center">
-            <NuxtImg src="/images/logo.jpg" alt="Logo" class="w-[140px] lg:w-[200px]" />
+            <NuxtImg
+              src="/images/logo.jpg"
+              alt="Logo"
+              class="w-[140px] lg:w-[200px]"
+            />
           </NuxtLink>
 
           <!-- Desktop Menu -->
@@ -81,19 +84,26 @@ const closeMenu = () => {
                   class="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg border rounded-md py-2 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 z-50"
                 >
                   <li
-                    v-for="service in services"
-                    :key="service.id"
+                    v-for="category in categories"
+                    :key="category.id"
                     class="px-4 py-2 hover:bg-orange-50"
                   >
                     <NuxtLink
-                      :to="`/services/${service.id}`"
+                      :to="`/category/${category.id}`"
                       class="block text-gray-700 hover:text-orange-500 transition"
                     >
-                      {{ service.name }}
+                      {{ category.name }}
                     </NuxtLink>
                   </li>
                 </ul>
               </div>
+
+              <NuxtLink
+                :to="`/infraStructure`"
+                class="block py-1 text-gray-700 hover:text-orange-500 transition"
+              >
+                Infrastructure Projects
+              </NuxtLink>
             </div>
           </div>
 
@@ -164,15 +174,24 @@ const closeMenu = () => {
             </p>
             <ul class="pl-4">
               <li
-                v-for="service in services"
-                :key="'mob-service-' + service.id"
+                v-for="category in categories"
+                :key="'mob-service-' + category.id"
               >
                 <NuxtLink
-                  :to="`/services/${service.id}`"
+                  :to="`/category/${category.id}`"
                   @click="closeMenu"
                   class="block py-1 text-gray-700 hover:text-orange-500 transition"
                 >
-                  {{ service.name }}
+                  {{ category.name }}
+                </NuxtLink>
+              </li>
+              <li class="pl-4">
+                <NuxtLink
+                  :to="`/infraStructure`"
+                  @click="closeMenu"
+                  class="block py-1 text-gray-700 hover:text-orange-500 transition"
+                >
+                  Infrastructure Projects
                 </NuxtLink>
               </li>
             </ul>

@@ -31,4 +31,5 @@ useHead({
   <AppAbout />
   <AppServices />
   <AppWhyChooseUS />
+  <AppPartners />
 </template>
