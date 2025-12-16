@@ -95,15 +95,30 @@ const closeMenu = () => {
                       {{ category.name }}
                     </NuxtLink>
                   </li>
+                  <li class="px-4 py-2 hover:bg-orange-50">
+                    <NuxtLink
+                      :to="`/newDevelopment`"
+                      class="block text-gray-700 hover:text-orange-500 transition"
+                    >
+                      New Development, Design Build Projects
+                    </NuxtLink>
+                  </li>
+                  <li class="px-4 py-2 hover:bg-orange-50">
+                    <NuxtLink
+                      :to="`/infraStructure`"
+                      class="text-lg text-slate-700 hover:text-orange-500 transition"
+                    >
+                      Infrastructure Projects
+                    </NuxtLink>
+                  </li>
                 </ul>
               </div>
 
-              <NuxtLink
-                :to="`/infraStructure`"
+              <a
+                href="/#partners"
                 class="text-lg text-slate-700 hover:text-orange-500 transition"
+                >Membership and Affiliations</a
               >
-                Infrastructure Projects
-              </NuxtLink>
             </div>
           </div>
 
@@ -185,6 +200,14 @@ const closeMenu = () => {
                   {{ category.name }}
                 </NuxtLink>
               </li>
+              <li class="px-4 py-2 hover:bg-orange-50">
+                <NuxtLink
+                  :to="`/newDevelopment`"
+                  class="block text-gray-700 hover:text-orange-500 transition"
+                >
+                  New Development, Design Build Projects
+                </NuxtLink>
+              </li>
             </ul>
           </div>
           <NuxtLink
@@ -194,6 +217,11 @@ const closeMenu = () => {
           >
             Infrastructure Projects
           </NuxtLink>
+          <a
+            href="/#partners"
+            class="block py-1 text-gray-700 hover:text-orange-500 transition"
+            >Membership and Affiliations</a
+          >
 
           <a
             href="#contact"

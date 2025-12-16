@@ -59,7 +59,7 @@
         <!-- RASM QISMI -->
         <div class="flex flex-col justify-between items-end">
           <NuxtImg
-            src="/images/about-banner.jpg"
+            src="/images/contactbanner.webp"
             alt="About RainForces"
             class="rounded-3xl shadow-lg w-full object-cover"
           />

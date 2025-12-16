@@ -443,5 +443,8 @@ export const useProjectsStore = defineStore("projects", {
       return (service_id: number) =>
         state.projects.filter((project) => project.service_id === service_id);
     },
+    getById: (state) => {
+      return (id: number) => state.projects.find((project) => project.id === id);
+    }
   },
 });

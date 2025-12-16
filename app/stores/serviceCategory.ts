@@ -6,7 +6,7 @@ export const useServiceCategoryStore = defineStore("serviceCategory", {
   state: () => ({
     categories: [
       { id: 1, name: "Facility Management & Building Restorations" },
-      { id: 2, name: "New Development, Design Build Projects" },
+      // { id: 2, name: "New Development, Design Build Projects" },
     ],
   }),
   getters: {

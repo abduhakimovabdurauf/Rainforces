@@ -1,5 +1,5 @@
 <template>
-  <section class="py-16 bg-gray-50">
+  <section class="py-16 bg-gray-50" id="partners">
     <div class="max-w-6xl mx-auto text-center">
       <h2 class="text-3xl font-bold text-gray-900 mb-8">
         Membership and Affiliations
