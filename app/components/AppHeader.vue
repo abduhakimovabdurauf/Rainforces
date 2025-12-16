@@ -100,7 +100,7 @@ const closeMenu = () => {
 
               <NuxtLink
                 :to="`/infraStructure`"
-                class="block py-1 text-gray-700 hover:text-orange-500 transition"
+                class="block text-lg py-1 text-gray-700 hover:text-orange-500 transition"
               >
                 Infrastructure Projects
               </NuxtLink>
