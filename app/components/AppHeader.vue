@@ -100,7 +100,7 @@ const closeMenu = () => {
 
               <NuxtLink
                 :to="`/infraStructure`"
-                class="block text-lg py-1 text-gray-700 hover:text-orange-500 transition"
+                class="text-lg text-slate-700 hover:text-orange-500 transition"
               >
                 Infrastructure Projects
               </NuxtLink>
@@ -185,17 +185,15 @@ const closeMenu = () => {
                   {{ category.name }}
                 </NuxtLink>
               </li>
-              <li class="pl-4">
-                <NuxtLink
-                  :to="`/infraStructure`"
-                  @click="closeMenu"
-                  class="block py-1 text-gray-700 hover:text-orange-500 transition"
-                >
-                  Infrastructure Projects
-                </NuxtLink>
-              </li>
             </ul>
           </div>
+          <NuxtLink
+            :to="`/infraStructure`"
+            @click="closeMenu"
+            class="block py-1 text-gray-700 hover:text-orange-500 transition"
+          >
+            Infrastructure Projects
+          </NuxtLink>
 
           <a
             href="#contact"
