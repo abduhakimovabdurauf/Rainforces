@@ -21,7 +21,7 @@ body {
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
 
 <template>
-  <div class="maintenance">
-    <h1>Sayt vaqtincha ishlamayapti</h1>
+  <div class="maintenance text-center flex flex-col justify-center items-center h-screen">
+    <p class="font-semibold text-xl">Sayt vaqtincha ishlamayapti</p>
   </div>
 </template>
